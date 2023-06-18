@@ -1,5 +1,13 @@
 import axios from 'axios';
 
-export const api = axios.create({
-  baseURL: 'http://10.1.1.31:3000',
+const axiosInstance = axios.create({
+  baseURL:
+    'https://y-plants-api.bravedesert-7b0b5672.westus2.azurecontainerapps.io',
 });
+
+axiosInstance.interceptors.request.use((config) => {
+  config.headers.Authorization = 'Bearer HeDKyixt_yMhR4TOvL4HNktaOxga-mgLkUcF';
+  return config;
+});
+
+export default axiosInstance;

@@ -29,6 +29,8 @@ module.exports = function (api) {
             '@routes': './src/infra/config/routes',
             '@screens': './src/presentation/screens',
             '@components': './src/presentation/components',
+            '@models': './src/models',
+            '@services': './src/services',
           },
         },
       ],
