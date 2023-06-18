@@ -16,7 +16,7 @@ export const HighlightComponent: React.FC<HighlightProps> = ({
       <Title {...elements?.titleProps}>{title}</Title>
 
       <Section>
-        <Icon name="energy" size={28} />
+        <Icon name="energy" />
 
         <CounterText>{counterText}</CounterText>
       </Section>
