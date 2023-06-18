@@ -1,32 +1,30 @@
-import { PixelRatio } from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { PixelRatio } from "react-native";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export default {
   colors: {
-    white: '#ffffff',
+    white: "#ffffff",
 
-    green_700: '#00875f',
-    green_500: '#00b37e',
+    yellotColor: "#ffc900",
 
-    red: '#f75a68',
-    red_dark: '#aa2834',
-
-    gray_700: '#121214',
-    gray_600: '#202024',
-    gray_500: '#29292e',
-    gray_400: '#323238',
-    gray_300: '#7c7c8a',
-    gray_200: '#c4c4cc',
-    gray_100: '#e1e1e6',
+    gray_700: "#121214",
+    gray_600: "#202024",
+    gray_500: "#29292e",
+    gray_300: "#7c7c8a",
   },
 
   fonts: {
-    regular: 'Roboto_400Regular',
-    bold: 'Roboto_700Bold',
+    regular: "Roboto_400Regular",
+    bold: "Roboto_700Bold",
   },
 
   typography: {
     fontSize: {
+      xxl: {
+        absolute: PixelRatio.getFontScale() * 34,
+        responsive: RFValue(PixelRatio.getFontScale() * 34),
+      },
+
       xl: {
         absolute: PixelRatio.getFontScale() * 24,
         responsive: RFValue(PixelRatio.getFontScale() * 24),

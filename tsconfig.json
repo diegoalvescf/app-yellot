@@ -1,4 +1,5 @@
 {
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
@@ -14,6 +15,5 @@
       "@models/*": ["./src/models/*"],
       "@services/*": ["./src/services/*"]
     }
-  },
-  "extends": "expo/tsconfig.base"
+  }
 }
