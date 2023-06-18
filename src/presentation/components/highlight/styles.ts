@@ -27,6 +27,7 @@ export const Section = styled(View)`
 
 export const Icon = styled(SimpleLineIcons).attrs(({ theme }) => ({
   color: theme.colors.yellotColor,
+  size: theme.sizeIcon.xm.responsive,
 }))``;
 
 export const CounterText = styled(Text)`
