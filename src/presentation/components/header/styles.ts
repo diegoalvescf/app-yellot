@@ -23,5 +23,5 @@ export const BackButton = styled.TouchableOpacity`
 
 export const BackIcon = styled(SimpleLineIcons).attrs(({ theme }) => ({
   color: theme.colors.white,
-  size: theme.sizeIcon.xl.responsive,
+  size: theme.sizeIcon.xxm.responsive,
 }))``;
