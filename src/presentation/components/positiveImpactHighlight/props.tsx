@@ -1,12 +1,11 @@
 import { TextProps, ViewProps } from "react-native";
 
 export interface HighlightProps {
-  title: string;
+  title?: string;
   leftTitle?: string;
   rightTitle?: string;
-  countLabel?: number;
-  countLabelLeft?: number;
-  countLabelRight?: number;
+  countTextLeft?: number;
+  countTextRight?: number;
   loading?: boolean;
   elements?: {
     containerProps?: ViewProps;

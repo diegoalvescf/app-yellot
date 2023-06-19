@@ -1,24 +1,31 @@
 import { highlightCardProps } from "./props";
-import { CounterText, Icon, Section, Title } from "./style";
+import { CountLabel, Icon, Loading, Section, Title } from "./style";
 
 export const HighlightCardComponent: React.FC<highlightCardProps> = ({
   title,
   icon,
-  counterText,
+  countLabel,
+  loading = false,
+  direction = "row",
+  size,
 }) => {
   return (
     <Section>
       <Section
         style={{
-          flexDirection: "row",
+          flexDirection: direction,
         }}
       >
-        <Icon name={icon} />
+        <Icon name={icon} size={size} />
 
-        <Title>{title}</Title>
+        <Title direction={direction}>{title}</Title>
       </Section>
 
-      <CounterText>{counterText}</CounterText>
+      {loading ? (
+        <Loading />
+      ) : (
+        <CountLabel direction={direction}>{countLabel}</CountLabel>
+      )}
     </Section>
   );
 };

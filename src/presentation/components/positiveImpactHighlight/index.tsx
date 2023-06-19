@@ -1,42 +1,38 @@
 import { HighlightCardComponent } from "@components/highlightCard";
 import { HighlightProps } from "./props";
-import { Container, CountLabel, Icon, Loading, Section, Title } from "./styles";
+import { Container, Section, Title } from "./styles";
 
-export const HighlightComponent: React.FC<HighlightProps> = ({
+export const PositiveImpactHighlight: React.FC<HighlightProps> = ({
   title,
   leftTitle,
   rightTitle,
   elements,
-  countLabel,
-  countLabelLeft,
-  countLabelRight,
-  loading = false,
+  countTextLeft,
+  countTextRight,
+  loading,
 }) => {
   return (
     <Container {...elements?.containerProps}>
-      <Title {...elements?.titleProps}>{title}</Title>
-
-      <Section>
-        <Icon name="solar-power" />
-
-        {loading ? <Loading /> : <CountLabel>{countLabel}</CountLabel>}
-      </Section>
-
+      <Title>{title}</Title>
       <Section
         style={{ justifyContent: "space-between", padding: 10, marginTop: 20 }}
       >
         <HighlightCardComponent
           title={leftTitle}
-          icon="sort-calendar-descending"
-          countLabel={countLabelLeft}
+          icon="pine-tree-box"
+          countLabel={countTextLeft}
           loading={loading}
+          direction="column"
+          size={35}
         />
 
         <HighlightCardComponent
           title={rightTitle}
-          icon="trending-up"
-          countLabel={countLabelRight}
+          icon="molecule-co2"
+          countLabel={countTextRight}
           loading={loading}
+          direction="column"
+          size={35}
         />
       </Section>
     </Container>

@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { Container } from './styles';
 import { ViewProps } from 'react-native';
 
-interface ContainerProps {
+export interface ContainerProps {
   children: ReactNode;
   elements?: {
     containerViewProps?: ViewProps;
