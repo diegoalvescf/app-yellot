@@ -3,11 +3,6 @@
     "name": "app-yellot",
     "slug": "app-yellot",
     "version": "1.0.0",
-    "assetBundlePatterns": ["**/*"],
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#333"
-    }
+    "assetBundlePatterns": ["**/*"]
   }
 }
